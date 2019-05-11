@@ -1,4 +1,5 @@
-﻿using AdventureEngine.Localisation;
+﻿using AdventureEngine.Extensions;
+using AdventureEngine.Localisation;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -17,7 +18,8 @@ namespace AdventureEngine.Parser
 
         public List<Action> Parse(string input)
         {
-            input = input.ToLower(CultureInfo.InvariantCulture);
+            input = input.ToLower(CultureInfo.InvariantCulture)
+                         .RemovePunctuation();
 
             var words = input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 

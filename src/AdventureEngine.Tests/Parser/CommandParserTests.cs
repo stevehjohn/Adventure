@@ -18,7 +18,7 @@ namespace AdventureEngine.Tests.Parser
         [Test]
         public void Parser_removes_filler_words()
         {
-            var result = _parser.Parse("I want to take the axe then move north");
+            var result = _parser.Parse("I want to take the axe then move north.");
 
             Assert.That(result.Count, Is.EqualTo(2));
             Assert.That(result[0].Verb, Is.EqualTo(Verb.Pickup));
