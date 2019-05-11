@@ -32,11 +32,15 @@ namespace AdventureEngine.Parser
 
             var actions = new List<Action>();
 
+            string currentWord = null;
+
             try
             {
                 for (var i = 0; i < words.Length; i += 2)
                 {
-                    var verb = _language.Verbs.FirstOrDefault(v => v.Value.Contains(words[i])).Key;
+                    currentWord = words[i];
+
+                    var verb = _language.Verbs.Single(v => v.Value.Contains(words[i])).Key;
 
                     actions.Add(new Action
                                 {
@@ -47,7 +51,7 @@ namespace AdventureEngine.Parser
             }
             catch
             {
-                //
+                throw new ParserException(currentWord);
             }
 
             return actions;
