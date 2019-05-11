@@ -13,6 +13,6 @@ namespace AdventureEngine.Localisation
                                                                 { Verb.Use, new[] { "use" } }
                                                             };
 
-        public override string[] Fillers => new[] { "the", "a", "an", "then" };
+        public override string[] Fillers => new[] { "i", "to", "want", "the", "a", "an", "then" };
     }
 }
