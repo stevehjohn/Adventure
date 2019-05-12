@@ -6,6 +6,6 @@
 
         public int Health { get; set; }
 
-        public Location StartLocation { get; set; }
+        public int StartLocationId { get; set; }
     }
 }
