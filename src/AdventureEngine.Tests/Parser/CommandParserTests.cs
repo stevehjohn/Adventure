@@ -5,6 +5,7 @@ using NUnit.Framework;
 
 namespace AdventureEngine.Tests.Parser
 {
+    [TestFixture]
     public class CommandParserTests
     {
         private CommandParser _parser;
