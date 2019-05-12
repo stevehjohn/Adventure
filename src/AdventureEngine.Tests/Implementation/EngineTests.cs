@@ -19,7 +19,7 @@ namespace AdventureEngine.Tests.Implementation
         {
             _io = new Mock<IInputOutput>();
             _parser = new Mock<ICommandParser>();
-
+            
             _engine = new Engine(_io.Object, _parser.Object);
         }
     }

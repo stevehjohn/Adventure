@@ -8,4 +8,9 @@
     <None Remove="AdventureEngine.v3.ncrunchproject" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2019.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
 </Project>
