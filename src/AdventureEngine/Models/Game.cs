@@ -19,6 +19,6 @@ namespace AdventureEngine.Models
 
         public Player Player { get; set; }
 
-        public DateTime GameTime => new DateTime(GameStartTime.Ticks + (long)((_timeProvider.UtcTime().Ticks - GameStartTime.Ticks) * GameDefinition.TimeSpeedFactor));
+        public DateTime GameTime => new DateTime(GameStartTime.Ticks + (long) ((_timeProvider.UtcTime().Ticks - GameStartTime.Ticks) * GameDefinition.TimeSpeedFactor));
     }
 }
