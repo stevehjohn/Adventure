@@ -34,5 +34,13 @@ namespace AdventureEngine.Tests.Parser
 
             Assert.That(exception.Message, Is.EqualTo("sake"));
         }
+
+        [Test]
+        public void Returns_null_if_verbs_and_subjects_are_not_even()
+        {
+            var result = _parser.Parse("take axe and move");
+
+            Assert.Null(result);
+        }
     }
 }
