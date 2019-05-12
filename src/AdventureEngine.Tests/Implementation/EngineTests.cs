@@ -1,5 +1,6 @@
 ﻿using AdventureEngine.Implementation;
 using AdventureEngine.Infrastructure;
+using AdventureEngine.Interfaces;
 using AdventureEngine.Parser;
 using Moq;
 using NUnit.Framework;

@@ -1,6 +1,6 @@
 ﻿using JetBrains.Annotations;
 
-namespace AdventureEngine.Infrastructure
+namespace AdventureEngine.Interfaces
 {
     public interface IInputOutput
     {
