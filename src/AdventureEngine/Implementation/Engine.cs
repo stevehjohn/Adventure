@@ -1,5 +1,4 @@
-﻿using AdventureEngine.Infrastructure;
-using AdventureEngine.Interfaces;
+﻿using AdventureEngine.Interfaces;
 using AdventureEngine.Parser;
 
 namespace AdventureEngine.Implementation
